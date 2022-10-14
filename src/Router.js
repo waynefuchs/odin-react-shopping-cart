@@ -1,10 +1,11 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "./App.css";
+import LandingPage from "./components/LandingPage";
 
 const App = () => 
   <BrowserRouter>
     <Routes>
-      <Route path="/" element={<div id="home">Test</div>} />
+      <Route path="/" element={<LandingPage />} />
 
     </Routes>
   </BrowserRouter>;

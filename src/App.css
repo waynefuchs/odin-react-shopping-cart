@@ -7,6 +7,9 @@
   --c3: #F2BF27;
 }
 
+
 body {
   background-color: var(--c-bg);
+  margin: 0;
+  padding: 0;
 }
