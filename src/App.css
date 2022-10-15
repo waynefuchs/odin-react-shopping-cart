@@ -1,15 +1,16 @@
 :root {
-  --c-bg: #D9D9D9;
+  --c-light: #D9D9D9;
   --c1-l: #118CD9;
   --c1-d: #282B59;
   --c2-l: #14D945;
   --c2-d: #12A628;
   --c3: #F2BF27;
+  --spacing: 1rem;
 }
 
 
 body {
-  background-color: var(--c-bg);
+  background-color: var(--c-light);
   margin: 0;
   padding: 0;
 }
