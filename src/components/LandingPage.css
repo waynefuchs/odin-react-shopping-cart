@@ -22,14 +22,18 @@
   color: var(--c-light);
 }
 
-#LandingPage .SearchBegins button {
+#LandingPage .SearchBegins a {
   background-color: var(--c1-l);
   width: 8rem;
   height: 2rem;
   border: none;
   border-radius: var(--spacing);
+  text-align: center;
+  line-height: 2rem;
+  text-decoration: none;
+  color: var(--c-light);
 }
 
-#LandingPage .SearchBegins button:hover {
+#LandingPage .SearchBegins a:hover {
   background-color: var(--c2-l);
 }
