@@ -4,18 +4,22 @@
 }
 
 #LandingPage .SearchBegins {
-  display: flex;
+  /* position the element */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 
-  align-content: center;
+  /* position the children elements */
+  display: flex;
   align-items: center;
-  justify-content: center;
   gap: var(--spacing);
   
   /* style box */
   background-color: var(--c1-d);
   padding: var(--spacing);
-  margin: 0 25%;
   border-radius: var(--spacing);
+  color: var(--c-light);
 }
 
 #LandingPage .SearchBegins button {
@@ -24,4 +28,8 @@
   height: 2rem;
   border: none;
   border-radius: var(--spacing);
+}
+
+#LandingPage .SearchBegins button:hover {
+  background-color: var(--c2-l);
 }
