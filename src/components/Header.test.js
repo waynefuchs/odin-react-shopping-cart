@@ -22,10 +22,15 @@ it("has a link to about page", () => {
   expect(linkElement.at(0)).toHaveAttribute("href", "/about");
 });
 
-// it("has a link to the shopping page", () => {
+it("has a link to the shopping page", () => {
+  renderWithProviders(<Header />);
+  const linkElement = screen.getAllByRole("link", { name: "Shop" });
+  expect(linkElement.length).toBe(1);
+  expect(linkElement.at(0)).toHaveAttribute("href", "/shop");
+});
 
-// });
-
-// it("has a shopping cart link", () => {
-
-// });
+it("shows a shopping cart icon", () => {
+  renderWithProviders(<Header />);
+  const shoppingCartIcon = screen.getByText(/shopping_cart/);
+  expect(shoppingCartIcon).toBeInTheDocument();
+});
