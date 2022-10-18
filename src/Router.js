@@ -1,8 +1,10 @@
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import "./App.css";
 import "./Button.css";
+
+import LandingPage from "./pages/LandingPage";
+
 import Header from "./components/Header";
-import LandingPage from "./components/LandingPage";
 import Item from "./components/Item";
 
 import i from "./images";
