@@ -1,0 +1,43 @@
+.item {
+    background: #ffffff;
+
+    display: grid;
+    grid-template-columns: auto;
+    align-items: center;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    width: 350px;
+}
+
+.item > img {
+    justify-self: center;
+}
+
+.item-price {
+    min-width: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    gap: var(--spacing);
+    border-top: 8px solid var(--c-light);
+}
+
+.item-price > button {
+    height: 2rem;
+    align-self: center;
+
+    background-color: var(--c1-l);
+    width: 8rem;
+    height: 2rem;
+    border: none;
+    border-radius: var(--spacing);
+    text-align: center;
+    line-height: 2rem;
+    text-decoration: none;
+    color: var(--c-light);
+}
+
+.item-price > button:hover {
+    background-color: var(--c2-l);
+}

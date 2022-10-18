@@ -5,6 +5,9 @@ import Header from "./components/Header";
 import LandingPage from "./components/LandingPage";
 import Item from "./components/Item";
 
+import i from "./images";
+
+
 const App = () => (
   <Router>
     <Header />
@@ -14,12 +17,7 @@ const App = () => (
       <Route
         path="/shop"
         element={
-          <Item
-            name="Silk Road Camel"
-            image="image.jpeg"
-            shortDescription="A camel"
-            price="123.45"
-          />
+          <Item data={i[0]} />
         }
       />
     </Routes>
