@@ -14,3 +14,9 @@ header {
 header > h1 {
   margin: 0;
 }
+
+header > h1 > a {
+  color: var(--c-light);
+  text-decoration: none;
+  cursor: pointer;
+}
