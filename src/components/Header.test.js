@@ -15,6 +15,13 @@ test("header exists", () => {
   expect(element).toBeInTheDocument();
 });
 
+it("has a link to the Landing Page", () => {
+  renderWithProviders(<Header />);
+  const linkElement = screen.getAllByRole("link", { name: "Grantiques" });
+  expect(linkElement.length).toBe(1);
+  expect(linkElement.at(0)).toHaveAttribute("href", "/");
+});
+
 it("has a link to about page", () => {
   renderWithProviders(<Header />);
   const linkElement = screen.getAllByRole("link", { name: "About" });
