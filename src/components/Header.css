@@ -1,16 +1,19 @@
 header {
-    border-top: none !important;
-    background: var(--c1-d);
-    border-bottom: var(--border-size) solid var(--c1-l);
-    color: var(--c-light);
+  border-top: none !important;
+  background: var(--c1-d);
+  border-bottom: var(--border-size) solid var(--c1-l);
+  color: var(--c-light);
 
-    display: grid;
-    grid-template-columns: 1fr auto auto auto;
+  display: grid;
+  grid-template-columns: 1fr auto auto auto;
+  align-items: center;
+  gap: var(--spacing);
+  padding: var(--spacing);
 }
 
 header > h1 {
-    margin: 0;
-    border-top: none !important;
-    border: none;
-    padding: var(--spacing);
+  margin: 0;
+  border-top: none !important;
+  border: none;
+  padding: 0;
 }

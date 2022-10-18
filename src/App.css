@@ -1,20 +1,52 @@
-@import url('https://fonts.googleapis.com/css2?family=IM+Fell+English&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=IM+Fell+English&display=swap");
 
-:root {
-  --c-light: #D9D9D9;
-  --c1-l: #118CD9;
-  --c1-d: #282B59;
-  --c2-l: #14D945;
-  --c2-d: #12A628;
-  --c3: #F2BF27;
-  --spacing: 1rem;
-  --border-size: 8px;
-  font-family: 'IM Fell English', serif;
+@font-face {
+  font-family: "Material Icons";
+  font-style: normal;
+  font-weight: 400;
+  src: local("MaterialIcons-Regular"),
+    url(./fonts/MaterialIcons-Regular.ttf) format("truetype");
 }
 
+:root {
+  --c-light: #d9d9d9;
+  --c1-l: #118cd9;
+  --c1-d: #282b59;
+  --c2-l: #14d945;
+  --c2-d: #12a628;
+  --c3: #f2bf27;
+  --spacing: 1rem;
+  --border-size: 8px;
+  font-family: "IM Fell English", serif;
+}
 
 body {
   background-color: var(--c-light);
   margin: 0;
   padding: 0;
+}
+
+.material-icons {
+  font-family: "Material Icons";
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px; /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Support for IE. */
+  font-feature-settings: "liga";
 }

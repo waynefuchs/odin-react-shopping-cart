@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
 import "./LandingPage.css";
 
 const LandingPage = () => {
@@ -6,7 +6,9 @@ const LandingPage = () => {
     <div id="LandingPage">
       <div className="SearchBegins">
         <div>Your Search Begins</div>
-        <Link to="/shop">Here</Link>
+        <Link to="shop" className="button">
+          Here
+        </Link>
       </div>
     </div>
   );

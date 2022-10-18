@@ -10,7 +10,22 @@ function renderWithProviders(el) {
 }
 
 test("header exists", () => {
-    renderWithProviders(<Header />);
-    const element = screen.getByText(/grantiques/i);
-    expect(element).toBeInTheDocument();
+  renderWithProviders(<Header />);
+  const element = screen.getByText(/grantiques/i);
+  expect(element).toBeInTheDocument();
 });
+
+it("has a link to about page", () => {
+  renderWithProviders(<Header />);
+  const linkElement = screen.getAllByRole("link", { name: "About" });
+  expect(linkElement.length).toBe(1);
+  expect(linkElement.at(0)).toHaveAttribute("href", "/about");
+});
+
+// it("has a link to the shopping page", () => {
+
+// });
+
+// it("has a shopping cart link", () => {
+
+// });
