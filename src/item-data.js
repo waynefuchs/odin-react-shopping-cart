@@ -12,7 +12,7 @@ import windmillPlate from "./img/items/windmill-plate.png";
 import womanCarving from "./img/items/woman-carving.png";
 
 const createItemObject = (name, image, shortDescription, price) => {
-  return { name, image, shortDescription, price };
+  return { id: uniqid(), name, image, shortDescription, price };
 };
 
 const data = [

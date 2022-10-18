@@ -3,12 +3,9 @@ import "./App.css";
 import "./Button.css";
 
 import LandingPage from "./pages/LandingPage";
+import Shop from "./pages/Shop";
 
 import Header from "./components/Header";
-import Item from "./components/Item";
-
-import i from "./images";
-
 
 const App = () => (
   <Router>
@@ -16,12 +13,7 @@ const App = () => (
 
     <Routes>
       <Route path="/" element={<LandingPage />} />
-      <Route
-        path="/shop"
-        element={
-          <Item data={i[0]} />
-        }
-      />
+      <Route path="/shop" element={<Shop />} />
     </Routes>
   </Router>
 );
