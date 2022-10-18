@@ -1,0 +1,16 @@
+header {
+    border-top: none !important;
+    background: var(--c1-d);
+    border-bottom: var(--border-size) solid var(--c1-l);
+    color: var(--c-light);
+
+    display: grid;
+    grid-template-columns: 1fr auto auto auto;
+}
+
+header > h1 {
+    margin: 0;
+    border-top: none !important;
+    border: none;
+    padding: var(--spacing);
+}
