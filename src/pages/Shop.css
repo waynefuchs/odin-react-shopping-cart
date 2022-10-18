@@ -1,0 +1,7 @@
+.shop {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 350px);
+    justify-content: center;
+    gap: var(--item-spacing);
+    padding: var(--spacing);
+}
