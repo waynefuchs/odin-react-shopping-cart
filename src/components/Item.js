@@ -4,7 +4,7 @@ const Item = (props) => {
   const { id, name, image, shortDescription, price } = props.data;
 
   return (
-    <div className="item" key={id}>
+    <div className="item">
       <h2>{name}</h2>
       <img src={image} alt={shortDescription} />
       <div className="item-price">

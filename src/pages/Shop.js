@@ -6,7 +6,7 @@ const Shop = () => {
   return (
     <div className="shop" data-testid="shop">
       {allItems.map((i) => (
-        <Item data={i} />
+        <Item data={i} key={i.id} />
       ))}
     </div>
   );
