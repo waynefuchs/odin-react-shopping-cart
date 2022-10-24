@@ -2,7 +2,9 @@ import { Link } from "react-router-dom";
 import CartDisplay from "./CartDisplay";
 import "./Header.css";
 
-const Header = () => {
+const Header = (props) => {
+  const { cart } = props;
+
   return (
     <header>
       <h1>
@@ -17,7 +19,7 @@ const Header = () => {
         Shop
       </Link>
 
-      <CartDisplay cart={[1, 1, 1]} />
+      <CartDisplay cart={cart} />
     </header>
   );
 };

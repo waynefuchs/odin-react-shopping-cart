@@ -1,7 +1,8 @@
 import "./Item.css";
 
 const Item = (props) => {
-  const { name, image, shortDescription, price } = props.data;
+  const { addFn, data } = props;
+  const { id, name, image, shortDescription, price } = data;
 
   return (
     <div className="item">
@@ -9,13 +10,14 @@ const Item = (props) => {
       <img src={image} alt={shortDescription} />
       <div className="item-price">
         <h2>
-          {Number(price/100).toLocaleString("en-US", {
+          {Number(price / 100).toLocaleString("en-US", {
             style: "currency",
             currency: "USD",
             minimumFractionDigits: 2,
           })}
         </h2>
-        <button>Add To Cart</button>
+
+        <button onClick={() => addFn(id)}>Add To Cart</button>
       </div>
     </div>
   );
