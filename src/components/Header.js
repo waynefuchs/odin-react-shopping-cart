@@ -17,7 +17,7 @@ const Header = () => {
         Shop
       </Link>
 
-      <CartDisplay />
+      <CartDisplay cart={[1, 1, 1]} />
     </header>
   );
 };

@@ -15,7 +15,12 @@ class Cart {
   }
 
   Price() {
-    return this.list.reduce((total, i) => total + itemdata[i].price, 0);
+    return Number(this.list.reduce((total, i) => total + itemdata[i].price, 0) / 100)
+        .toLocaleString("en-US", {
+          style: "currency",
+          currency: "USD",
+          minimumFractionDigits: 2,
+        })
   }
 }
 

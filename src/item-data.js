@@ -11,21 +11,23 @@ import trainPlate from "./img/items/train-plate.png";
 import windmillPlate from "./img/items/windmill-plate.png";
 import womanCarving from "./img/items/woman-carving.png";
 
+// Price must be stored in cents
+// Otherwise floating point precision can be an issue
 const createItemObject = (id, name, image, shortDescription, price) => {
   return { id, name, image, shortDescription, price };
 };
 
 const data = [
-  createItemObject(1, "Silk Road Camel", camel, "Silk Road Camel", 123.45),
-  createItemObject(2, "Maine Lighthouse", lighthouse, "Maine Lighthouse", 234.56),
-  createItemObject(3, "Wooden Loon Carving", loon, "Wooden Loon Carving", 300.50),
-  createItemObject(4, "Swedish Man Carving", manCarving, "Swedish Man Carving", 222.22),
-  createItemObject(5, "Swedish Woman Carving", womanCarving, "Swedish Woman Carving", 222.22),
-  createItemObject(6, "Crystal Moose", mooseGlass, "Crystal Moose", 73.45),
-  createItemObject(7, "Oriental Chalice", orientalCup, "Oriental Chalice", 500.00),
-  createItemObject(8, "Silver Tea Cup", silverTeaCup, "Silver Tea Cup", 125.50),
-  createItemObject(9, "Train Plate", trainPlate, "Train Plate", 80.80),
-  createItemObject(10, "Windmill Plate", windmillPlate, "Windmill Plate", 80.80),
+  createItemObject(1, "Silk Road Camel", camel, "Silk Road Camel", 12345),
+  createItemObject(2, "Maine Lighthouse", lighthouse, "Maine Lighthouse", 23456),
+  createItemObject(3, "Wooden Loon Carving", loon, "Wooden Loon Carving", 30050),
+  createItemObject(4, "Swedish Man Carving", manCarving, "Swedish Man Carving", 22222),
+  createItemObject(5, "Swedish Woman Carving", womanCarving, "Swedish Woman Carving", 22222),
+  createItemObject(6, "Crystal Moose", mooseGlass, "Crystal Moose", 7345),
+  createItemObject(7, "Oriental Chalice", orientalCup, "Oriental Chalice", 50000),
+  createItemObject(8, "Silver Tea Cup", silverTeaCup, "Silver Tea Cup", 12550),
+  createItemObject(9, "Train Plate", trainPlate, "Train Plate", 8080),
+  createItemObject(10, "Windmill Plate", windmillPlate, "Windmill Plate", 8080),
 ];
 
 export default data;

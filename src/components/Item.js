@@ -1,7 +1,7 @@
 import "./Item.css";
 
 const Item = (props) => {
-  const { id, name, image, shortDescription, price } = props.data;
+  const { name, image, shortDescription, price } = props.data;
 
   return (
     <div className="item">
@@ -9,7 +9,7 @@ const Item = (props) => {
       <img src={image} alt={shortDescription} />
       <div className="item-price">
         <h2>
-          {Number(price).toLocaleString("en-US", {
+          {Number(price/100).toLocaleString("en-US", {
             style: "currency",
             currency: "USD",
             minimumFractionDigits: 2,

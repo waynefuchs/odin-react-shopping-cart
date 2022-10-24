@@ -1,11 +1,15 @@
 import "./CartDisplay.css";
+import Cart from "../data/Cart";
 
-const CartDisplay = () => {
+const CartDisplay = (props) => {
+  const {cart} = props;
+  const c = new Cart(cart);
+
   return (
     <div className="shoppingCartDisplay">
-      <div>(7)</div>
+      <div>({c.Count()})</div>
       <div className="material-icons">shopping_cart</div>
-      <div>$123.45</div>
+      <div>{c.Price()}</div>
     </div>
   );
 };

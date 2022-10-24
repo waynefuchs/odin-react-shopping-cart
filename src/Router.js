@@ -7,15 +7,17 @@ import Shop from "./pages/Shop";
 
 import Header from "./components/Header";
 
-const App = () => (
-  <Router>
-    <Header />
+const App = () => {
+  return (
+    <Router>
+      <Header />
 
-    <Routes>
-      <Route path="/" element={<LandingPage />} />
-      <Route path="/shop" element={<Shop />} />
-    </Routes>
-  </Router>
-);
+      <Routes>
+        <Route path="/" element={<LandingPage />} />
+        <Route path="/shop" element={<Shop />} />
+      </Routes>
+    </Router>
+  );
+};
 
 export default App;
