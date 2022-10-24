@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import CartDisplay from "./CartDisplay";
 import "./Header.css";
 
 const Header = () => {
@@ -16,7 +17,7 @@ const Header = () => {
         Shop
       </Link>
 
-      <span className="material-icons">shopping_cart</span>
+      <CartDisplay />
     </header>
   );
 };

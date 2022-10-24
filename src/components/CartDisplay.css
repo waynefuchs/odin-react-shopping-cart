@@ -1,0 +1,6 @@
+.shoppingCartDisplay {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 0.5rem;
+  align-items: center;
+}

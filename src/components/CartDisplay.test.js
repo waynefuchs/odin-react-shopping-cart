@@ -3,7 +3,7 @@ import { getAllByRole, render, screen } from "@testing-library/react";
 import "@testing-library/jest-dom"; // optional
 import { MemoryRouter as Router } from "react-router-dom";
 
-import Item from "./CartDisplay";
+import CartDisplay from "./CartDisplay";
 
 test("Item component exists", () => {
   render(<CartDisplay />);
