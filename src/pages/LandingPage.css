@@ -1,6 +1,6 @@
 #LandingPage {
   background-image: url('../img/antiques.jpeg');
-  min-height: 100vh;
+  min-height: calc(100vh - 4.5rem);
   background-repeat: no-repeat;
   background-size: cover;
 }

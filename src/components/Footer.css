@@ -1,0 +1,33 @@
+footer {
+  background-color: var(--c1-d);
+  height: 30vh;
+
+  display: grid;
+  align-items: center;
+  grid-template-rows: 1fr min-content;
+}
+
+.brand-img {
+  color: white;
+  fill: white;
+  width: 2rem;
+  height: 2rem;
+}
+
+.socials {
+  display: grid;
+  grid-template-columns: repeat(8, auto);
+  justify-content: center;
+  gap: 1rem;
+}
+
+.greybar {
+  background-color: var(--c-light);
+  color: var(--c1-d);
+  padding: 1rem;
+
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: center;
+  gap: 1rem;
+}

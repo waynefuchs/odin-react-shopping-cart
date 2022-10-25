@@ -1,7 +1,7 @@
 header {
   position: sticky;
   top: 0;
-  width: fill;
+  width: stretch;
   height: 4rem;
   padding: 0 2rem;
 
