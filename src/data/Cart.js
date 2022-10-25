@@ -22,6 +22,14 @@ class Cart {
           minimumFractionDigits: 2,
         })
   }
+
+  UniqueIDs() {
+    return [...new Set(this.list)];
+  }
+
+  quantity(id) {
+    return this.list.filter(i => i === id).length;
+  }
 }
 
 export default Cart;
