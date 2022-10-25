@@ -6,8 +6,8 @@ const CartDisplay = (props) => {
   const c = new Cart(cart);
 
   return (
-    <div className="shoppingCartDisplay">
-      <div>({c.Count()})</div>
+    <div className="shoppingCartDisplay button">
+      <div className="circ">{c.Count()}</div>
       <div className="material-icons">shopping_cart</div>
       <div>{c.Price()}</div>
     </div>

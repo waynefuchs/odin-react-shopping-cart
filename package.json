@@ -29,7 +29,7 @@
     "collectCoverageFrom": [
       "src/**/*.{js, jsx, ts, tsx}",
       "!src/index.js",
-      "!src/Router.js" 
+      "!src/PageRouter.js" 
     ]
   },  
   "browserslist": {

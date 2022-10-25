@@ -24,7 +24,7 @@
     border-top: 8px solid var(--c-light);
 }
 
-.item-price > button {
+/* .item-price > button {
     height: 2rem;
     align-self: center;
 
@@ -37,8 +37,8 @@
     line-height: 2rem;
     text-decoration: none;
     color: var(--c-light);
-}
+} */
 
-.item-price > button:hover {
+/* .item-price > button:hover {
     background-color: var(--c2-l);
-}
+} */
