@@ -7,20 +7,20 @@ const Header = (props) => {
 
   return (
     <header>
-      <h1>
-        <Link to="/">Grantiques</Link>
-      </h1>
+        <h1>
+          <Link to="/">Grantiques</Link>
+        </h1>
 
-      <Link to="about" className="button">
-        About
-      </Link>
+        <Link to="about" className="button">
+          About
+        </Link>
 
-      <Link to="shop" className="button">
-        Shop
-      </Link>
+        <Link to="shop" className="button">
+          Shop
+        </Link>
 
-      <CartDisplay cart={cart} />
-    </header>
+        <CartDisplay cart={cart} />
+      </header>
   );
 };
 
