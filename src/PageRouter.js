@@ -17,6 +17,10 @@ const PageRouter = () => {
     setCart([...cart, id]);
   };
 
+  const removeFromCart = (id) => {
+    const lastIndex = cart.lastIndexOf(id);
+    setCart(cart.filter((n, i) => i !== lastIndex));
+  }
 
   return (
     <Router>
@@ -24,9 +28,9 @@ const PageRouter = () => {
 
       <Routes>
         <Route path="/" element={<LandingPage />} />
-        <Route path="/shop" element={<Shop cart={cart} addFn={addToCart} />} />
+        <Route path="/shop" element={<Shop cart={cart} addFn={addToCart} rmFn={removeFromCart} />} />
         <Route path="/about" element={<About />} />
-        <Route path="/checkout" element={<ShoppingCart cart={cart} />} />
+        <Route path="/checkout" element={<ShoppingCart cart={cart} addFn={addToCart} rmFn={removeFromCart} />} />
       </Routes>
 
     </Router>

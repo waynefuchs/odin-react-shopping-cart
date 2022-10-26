@@ -2,8 +2,8 @@ import Cart from "../data/Cart";
 import "./Item.css";
 
 const ItemCart = (props) => {
-  const { removeFn, addFn, subFn, data, cart } = props;
-  const { id, name, image, shortDescription, price } = data;
+  const { rmFn, addFn, data, cart } = props;
+  const { id, name, image, shortDescription } = data;
   const c = new Cart(cart);
 
   return (
@@ -15,9 +15,11 @@ const ItemCart = (props) => {
           {c.Price(id)}
         </h2>
 
-        <button onClick={() => addFn(id)}>-</button>
-        <p>{c.quantity(id)}</p>
-        <button onClick={() => addFn(id)}>+</button>
+        <div className="adjustQuantity">
+          <button className="addsub" onClick={() => rmFn(id)}>-</button>
+          <p>{c.quantity(id)}</p>
+          <button className="addsub" onClick={() => addFn(id)}>+</button>
+        </div>
       </div>
     </div>
   );
