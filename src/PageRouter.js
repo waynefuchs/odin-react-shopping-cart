@@ -8,6 +8,7 @@ import Shop from "./pages/Shop";
 import About from "./pages/About";
 
 import Header from "./components/Header";
+import ShoppingCart from "./pages/ShoppingCart";
 
 const PageRouter = () => {
   const [cart, setCart] = useState([]);
@@ -25,6 +26,7 @@ const PageRouter = () => {
         <Route path="/" element={<LandingPage />} />
         <Route path="/shop" element={<Shop cart={cart} addFn={addToCart} />} />
         <Route path="/about" element={<About />} />
+        <Route path="/checkout" element={<ShoppingCart cart={cart} />} />
       </Routes>
 
     </Router>

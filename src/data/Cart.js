@@ -14,8 +14,9 @@ class Cart {
     return this.list.length;
   }
 
-  Price() {
-    return Number(this.list.reduce((total, i) => total + itemdata[i].price, 0) / 100)
+  Price(id=null) {
+    const startingList = (id!==null) ? this.list.filter(i => i === id) : this.list;
+    return Number(startingList.reduce((total, i) => total + itemdata[i].price, 0) / 100)
         .toLocaleString("en-US", {
           style: "currency",
           currency: "USD",
@@ -29,6 +30,10 @@ class Cart {
 
   quantity(id) {
     return this.list.filter(i => i === id).length;
+  }
+
+  getItemData(id) {
+    return itemdata[id];
   }
 }
 
