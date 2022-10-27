@@ -3,7 +3,13 @@ import "./Item.css";
 
 const ItemCart = (props) => {
   const { rmFn, addFn, data, cart } = props;
-  const { id, name, image, shortDescription } = data;
+  const { id, name, image, shortDescription } = data ?? 
+    {
+      id: -1,
+      name: "Invalid Item",
+      image: "",
+      shortDescription: ""
+    };
   const c = new Cart(cart);
 
   return (

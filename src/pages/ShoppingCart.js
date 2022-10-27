@@ -11,7 +11,6 @@ const ShoppingCart = (props) => {
   return (
     <>
       <div className="shop" data-testid="shop">
-        {console.log(cart)}
         {cart.length > 0
           ? c.UniqueIDs().map(i => <ItemCart cart={cart} data={c.getItemData(i)} key={i} addFn={addFn} rmFn={rmFn} />)
           : <h2>Shopping Cart is Empty!</h2>}
